@@ -96,6 +96,7 @@ async def on_ready():
 
 @bot.command()
 async def invite(ctx):
+    'Returns the bot invite link'
     em = discord.Embed(color=discord.Colour.orange())
     em.add_field(name='Invite Atomical', value='[Here]( https://discordapp.com/oauth2/authorize?client_id=464683212174786561&permissions=104082502&scope=bot )')
     await ctx.send(embed=em)
