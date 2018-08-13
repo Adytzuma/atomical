@@ -107,7 +107,7 @@ class Fun():
 
 
 	@commands.cooldown(1, 5, commands.BucketType.user)
-	@commands.command(aliases= ["Ping", "PING"])
+	@commands.command()
 	async def ping(self, ctx):
 		"""Get the bot latency"""
 		em = discord.Embed(title="", description="", color=discord.Colour.blue())
@@ -118,7 +118,7 @@ class Fun():
 
 
 	@commands.cooldown(1, 5, commands.BucketType.user)
-	@commands.command(aliases= ["Lenny", "LENNY"])
+	@commands.command()
 	async def lenny(self, ctx):
 		"""Get the lenny face"""
 		await ctx.send("( ͡° ͜ʖ ͡° )")
@@ -126,7 +126,7 @@ class Fun():
 
 
 	@commands.cooldown(1, 5, commands.BucketType.user)
-	@commands.command(aliases= ["Respect", "RESPECT"])
+	@commands.command()
 	async def respect(self, ctx):
 		"""Pay respect"""
 		em = discord.Embed(title="", description="", color=discord.Colour.blue())
