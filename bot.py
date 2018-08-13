@@ -29,7 +29,6 @@ bot.load_extension("cogs.fun")
 bot.load_extension("cogs.more")
 bot.load_extension("cogs.utility")
 bot.load_extension("cogs.mod")
-bot.load_extension("cogs.test")
 bot.load_extension("cogs.api")
 bot.load_extension("cogs.meta")
 
@@ -110,7 +109,7 @@ async def invite(ctx):
 
 
 
-'''
+
 @bot.listen()
 async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandOnCooldown):
@@ -121,7 +120,7 @@ async def on_command_error(ctx, error):
         return await ctx.send('<:AtomicalForbidden:474576377954172949> | You are missing permission to execute this command')
     if isinstance(error, commands.BotMissingPermissions):
         return await ctx.send('<:AtomicalForbidden:474576377954172949> | I am missing permission to perform this command!')
-'''
+
 
 """
 @commands.cooldown(1, 5, commands.BucketType.user)
