@@ -20,7 +20,7 @@ class Moderation():
 
 
 	@commands.cooldown(1, 5, commands.BucketType.user)
-	@commands.command(aliases= ["Ban", "BAN"])
+	@commands.command()
 	@commands.has_permissions(ban_members=True)
 	async def ban(self, ctx, member: discord.Member = None, *, reason = None):
 		'''Ban a member in a guild
