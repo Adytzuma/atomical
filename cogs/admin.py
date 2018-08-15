@@ -63,6 +63,22 @@ class Admin():
 	async def say(self, ctx, *, message):
 		'Make me say something'
 		await ctx.send(message)
+		
+	@commands.command(hidden=True)
+        @commands.is_owner()
+        async def sudo(self, ctx, who: Union[discord.Member, discord.User], *, command: str):
+            """Run a command as another user."""
+            msg = copy.copy(ctx.message)
+            msg.author = who
+            msg.content = ctx.prefix + command
+            new_ctx = await self.bot.get_context(msg)
+            await self.bot.invoke(new_ctx)
+		
+		
+		
+		
+	
+
 
 
 	@commands.command()
