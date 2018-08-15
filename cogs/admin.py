@@ -140,6 +140,7 @@ class Admin():
 
 
 	@commands.command(pass_context=True, aliases = ['exec', 'evaluate', 'execute'], name='eval')
+	@commands.is_owner()
 	async def _eval(self, ctx, *, body: str):
 		"""Evaluates a code"""
 
