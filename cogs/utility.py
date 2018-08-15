@@ -29,7 +29,7 @@ class Utility():
 	async def support(self, ctx):
 		'Returns the link to the support server'
 		em = discord.Embed(title="", description="", color=discord.Colour.blue())
-		em.add_field(name='Support Server', value='[Here]( https://discord.gg/Aeq7jmK )')
+		em.add_field(name='Support Server', value='[Here]( https://discord.gg/vqquZAj )')
 		await ctx.send(embed=em)
 
 
