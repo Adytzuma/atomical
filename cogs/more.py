@@ -24,7 +24,7 @@ class More():
 		'Returns the bot DBL link'
 		em = discord.Embed(title="", color=discord.Colour.blue())
 		em.add_field(name="Discord Bot List", value='[Atomical]( https://discordbots.org/bot/464683212174786561 )', inline=False)
-		em.add_field(name="Discord Server List", value='[Atomical Tech Server]( https://discordbots.org/servers/465203534057570305 )', inline=False)
+		
 		await ctx.send(embed=em)
 
 
