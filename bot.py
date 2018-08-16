@@ -182,7 +182,7 @@ async def presence():
         await sleep(30)
         await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="Adytzu coding me | a?help"))
         await sleep(30)
-        await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name=f"to {len(bot.users)} users | a?help"))
+        await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name=f"{len(bot.users)} users | a?help"))
         await sleep(30)
         await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f"{len(bot.guilds)} servers | a?help"))
         await sleep(30)
